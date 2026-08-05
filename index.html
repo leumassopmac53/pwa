@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PWA Teste</title>
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#222">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>PWA funcionando 🎉</h1>
+
+<button id="btn">
+Clique
+</button>
+
+<script src="script.js"></script>
+
+<script>
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("./sw.js");
+}
+</script>
+
+</body>
+</html>
